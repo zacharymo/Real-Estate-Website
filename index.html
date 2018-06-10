@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dimex- Real Estate Agency</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(document).ready(function() {
+	//
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		//alignment			: 'centerRight', 
+		autoAdvance			: true,		
+		mobileAutoAdvance	: true,
+		//fx					: 'simpleFade',
+		height: '48%',
+		hover: false,
+		loader: 'none',
+		navigation: false,
+		navigationHover: false,
+		mobileNavHover: false,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 7000,
+		transPeriod: 1000,
+		minHeight: '300px'
+	});
+
+	//	carouFredSel
+	$('#slider3 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev3',
+		next: '.next3',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '330',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	}); 
+
+	
+
+
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider3 .carousel.main ul').trigger("updateSizes");		
+	}
+	updateSizes_vat();
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>  
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="front">
+<div id="main">
+
+<div class="top1_wrapper">
+<div class="top1 clearfix">
+	
+<header><a style="" href="index.html" class="logo text-left"><img style="width: 15%;   float: left;" src="images/logo.png" alt=""></a></div>
+
+<div class="menu_wrapper clearfix">
+<div class="logo_wrapper ">
+<div class="navbar navbar_">
+
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+<li class="active"><a href="index.html">home</a></li>
+<li class="sub-menu sub-menu-1"><a href="index-1.html">about</a>
+	<ul>
+		<li><a href="index-1.html">who we are</a></li>
+		<li class="sub-menu sub-menu-2"><a href="index-1.html">find an agent<em></em></a>
+			<ul>
+				<li><a href="index-1.html">FCT Abuja</a></li>
+				<li><a href="index-1.html">Lagos</a></li>
+				<li><a href="index-1.html">Kano</a></li>
+				<li><a href="index-1.html">Port Harcourt</a></li>
+				<li><a href="404.html">404 page not found</a></li>
+			</ul>
+		</li>
+		<li class="sub-menu sub-menu-2"><a href="index-1.html">history<em></em></a>
+			<ul>
+				<li><a href="index-1.html">Jan-Feb</a></li>
+				<li><a href="index-1.html">March-April</a></li>
+				<li><a href="index-1.html">May_June</a></li>
+				<li><a href="index-1.html">July-August</a></li>
+				<li><a href="404.html">Octorber-November</a></li>
+			</ul>
+		</li>		
+		<li><a href="index-1.html">testimonials</a></li>						
+	</ul>						
+</li>
+<li><a href="index-2.html">services</a></li>
+<li><a href="index-3.html">Sales</a></li>
+<li><a href="index-4.html">resources</a></li>											
+<li><a href="index-5.html">gallery</a></li>											
+<li><a href="index-6.html">contact us</a></li>											
+    </ul>
+		</div>
+	</div>
+</div>
+<div id="search">
+	
+<a href="#" class="searchBtn"></a>
+
+<div class="search-form-wrapper">
+<form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
+	<input type="text" name="s" value='Search' onBlur="if(this.value=='') this.value='Search'" onFocus="if(this.value =='Search' ) this.value=''">
+	<a href="#" onClick="document.getElementById('search-form').submit()"></a>
+</form>	
+</div>
+
+</div>	
+</div>
+
+</div>	
+</div>
+</header>
+<div id="inner">
+
+<div class="find_wrapper">
+
+<div class="find_inner">
+<div class="find">
+	
+<div class="txt1 text-center">welcome to</div>
+
+<div class="txt2">DIMEX</div>
+
+<div class="txt3">Real Estate Agency</div>
+
+<div class="line"></div>
+
+<div class="txt4">THE EASIEST PLACE TO FIND PROPERTY IN NIGERIA</div>
+
+<div class="find-form-wrapper clearfix">
+  <form id="find-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form clearfix" >
+    <input type="text" name="s" value='keyword' onBlur="if(this.value=='') this.value='keyword'" onFocus="if(this.value =='keyword' ) this.value=''">
+    <a href="#" onClick="document.getElementById('find-form').submit()"></a>
+  </form>
+</div>
+
+
+</div>	
+</div>
+
+<div id="slider_wrapper">
+	<div id="slider" class="clearfix">
+		<div id="camera_wrap">
+			<div data-src="images/slide01.jpg"></div>
+			<div data-src="images/slide02.jpg"></div>													
+			<div data-src="images/slide03.jpg"></div>
+			<div data-src="images/slide04.jpg"></div>
+			<div data-src="images/slide05.jpg"></div>
+		</div>	
+	</div>		
+</div>	
+</div>	
+
+<div class="banners">
+<div class="container">
+<div class="row">
+<div class="span4 banner banner1">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">ADVANTAGES</div>
+<div class="txt2">Whether you're purchasing your first home, investing, selling/buying a luxury home, downsizing or relocating; I am committed to helping you achieve your real estate goals by providing you with outstanding service and ....</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>
+<div class="span4 banner banner2">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">MISSION</div>
+<div class="txt2">I've built an outstanding team of experienced individuals, all of who are passionate about offering the best customer service. We will provide you with unparalleled professionalism, support and guidance. It is our goal to deliver an  ...</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>
+<div class="span4 banner banner3">
+<div class="banner_inner">
+<a href="#">	
+<div class="caption">
+<div class="txt1">vision</div>
+<div class="txt2">Become an award-winning Realtor ® and CEO of The Dimex Estate Group, Nigeria’s daily business activities include counseling modest first-time home buyers to quarterbacking the listing/marketing of homes owned by corporate leaders, c. ....</div>
+<div class="txt3">more</div>	
+</div>
+</a>	
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+<div id="slider3_wrapper">
+<div class="container">
+
+<div class="slider3_title"><span>LATEST OFFERS</span></div>	
+
+<div id="slider3">
+<a class="prev3" href="#"></a>
+<a class="next3" href="#"></a>		
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel01.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Agua estates</div>
+									<div class="txt2">Your guide to one of the most dynamic real estate markets in the world. </div>
+									<div class="txt3">₦76,500,000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel02.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Abdal House</div>
+									<div class="txt2">I’ve called the city home for over 20 years and I know its neighborhoods inside ..</div>
+									<div class="txt3">₦90,040, 000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel03.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Maikudi House</div>
+									<div class="txt2">From Morningside Heights to the Lower East Side and points beyond and in b</div>
+									<div class="txt3">₦140,800,000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel04.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Obasanjo Zone</div>
+									<div class="txt2">If you dream of living in Abuja or you want to expand your investment portfolio..</div>
+									<div class="txt3">₦12,000,000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel05.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Area 1012</div>
+									<div class="txt2">If you dream of living in Abuja or you want to expand your investment portfolio .</div>
+									<div class="txt3">₦50,000,000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>
+				<li>
+					<div class="offer">
+						<div class="offer_inner">
+							<a href="#">
+								<figure><img src="images/carousel06.jpg" alt="" class="img"></figure>
+								<div class="caption">
+									<div class="txt1">Abiola Estates</div>
+									<div class="txt2">If you dream of living in Abuja or you want to expand your investment portfolio.. </div>
+									<div class="txt3">₦470,000,000</div>
+									<div class="txt4">Read More</div>
+								</div>																
+							</a>
+						</div>						
+					</div>
+				</li>																									
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+</div>	
+</div>
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h2><span>How it works</span></h2>
+
+<div class="row">
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">a</div>
+	<div class="txt2">Dimex<br>Real Estates</div>
+</div>	
+
+<p>
+	My background in broadcasting and branding has proven to be invaluable,” says Nigeria. “It has given me a strong foundation and a unique understanding of how to make people pay attention to my unique value proposition and garner RESULTS! You can count on me to help you successfully navigate your home sale or purchase and to provide ”...
+</p>
+
+<a href="#" class="button1">Read more</a>
+
+
+
+</div>
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">b</div>
+	<div class="txt2">The journey<br>so far</div>
+</div>	
+
+<p>
+	Licensed in two states, Dimex is also the real estate columnist for Jagaba Magazine’s HOME. A powerhouse speaker and moderator, Dimex hosted the stage at Oprah’s “The Life You Want Reach”, and countless business conferences. As a 20 year award winning radio personality, Dimex has been syndicated in more than 60 cities ....
+</p>
+
+<a href="#" class="button1">Read more</a>
+
+
+
+</div>
+<div class="span3">
+
+<div class="work1 clearfix">
+	<div class="txt1">c</div>
+	<div class="txt2">How<br>to acquire your estate</div>
+</div>	
+
+<p>
+	My background in broadcasting and branding has proven to be invaluable,” says Dimex. “It has given me a strong foundation and a unique understanding of how to make people pay attention to my unique value proposition and garner RESULTS! You can count on me to help you successfully navigate your home ....
+</p>
+
+<a href="#" class="button1">Read more</a>
+
+
+
+</div>	
+</div>
+
+</div>
+<div class="span3">
+	
+<h2><span>Our Professional Management</span></h2>
+
+
+
+
+<ul class="ul1">
+	<li><a href="#">Navigate</a></li>
+	<li><a href="#">IDX Websites</a></li>
+	<li><a href="#">FAQ & Help Center</a></li>
+	<li><a href="#">Careers</a></li>
+	<li><a href="#">AgentPro</a></li>
+	<li><a href="#">Compare Service Plans</a></li>
+	<li><a href="#">Featured Showcase</a></li>
+	<li><a href="#">Upgrade Your Website</a></li>
+</ul>
+
+</div>	
+</div>	
+</div>	
+</div>
+
+<div class="bot1_wrapper">
+<div class="container">
+<div class="bot1 clearfix">
+<div class="row">
+<div class="span3">
+
+<div class="bot1_title">Copyright</div>	
+	
+<div class="logo2_wrapper"><a href="index.html" class="logo2"><img style="width: 60%" src="images/logo2.png" alt=""></a></div>
+
+<footer><div class="copyright">Copyright © 2018 <a href="zumaxdigital.com/works/"> Zumax Digital</a>.<br>All rights reserved.</div></footer>
+</div>	
+<div class="span5">
+
+<div class="bot1_title">Useful information</div>
+
+<p>
+	<b>
+		At Dimex easily find what you’re looking for.
+	</b>
+</p>
+
+<p>
+	Dimex invites visitors of her real estate broker website to experience the affluent southern Florida lifestyle. Providing access to the area’s best luxury condos (with almost 140 buildings to choose from) and upscale communities, the site’s user-friendly navigation and property search features enable buyers to easily find what they’re looking for....
+</p>
+
+</div>
+<div class="span3 offset1">
+
+<div class="bot1_title">Follow Us</div>
+	
+<div class="social_wrapper">
+	<ul class="social clearfix">    
+    <li><a href="#"><img src="images/social_ic1.png"></a></li>
+    <li><a href="#"><img src="images/social_ic2.png"></a></li>
+    <li><a href="#"><img src="images/social_ic3.png"></a></li>
+    <li><a href="#"><img src="images/social_ic4.png"></a></li>
+    <li><a href="#"><img src="images/social_ic5.png"></a></li>
+    <li><a href="#"><img src="images/social_ic6.png"></a></li>
+	</ul>
+</div>
+
+</div>
+</div>	
+</div>	
+</div>	
+</div>
+
+</div>	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
